@@ -5,11 +5,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/fullpage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
-    dasd a as dasdcacacas addad
+    <div id="fullPage">
+        <div class="section homeSection">
+            <div class="nav">
+                <div class="logo">
+                    <img src="./img/13245315_601973976633286_6375776499521195089_n.png">
+                </div>
+                <ul class="navLinks">
+                    <li><a>Pocetna</a></li>
+                    <li><a>Projekti</a></li>
+                    <li><a>Tim</a></li>
+                    <li><a>Pozicije</a></li>
+                    <li><a>Praksa</a></li>
+                    <li><a>Kursevi</a></li>
+                    <li><a>Kontakt</a></li>
+                    <li><a>Lokacija</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="headingClass">
+                    <h1 class="h1Class">
+                        <span class="headingOne">Upoznaj Se Sa</span>
+                        <span class="headingTwo">TeleTrader</span>
+                        <span class="headingThree">Timom i Projektima</span>
+                    </h1>
+                </div>
+                <div class="scroll">
+                    <div class="scrollImg">
+                        <a href="#section2"><img src="./img/scroll.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section projectsSection">
+
+        </div>
+        <div class="section s3">
+
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"></script>
+    <script>
+        new fullpage('#fullPage', {
+
+            autoScrolling: true,
+            navigation: true,
+            anchors: ['section1', 'section2', 'section3']
+
+        });
+    </script>
 </body>
 
 </html>

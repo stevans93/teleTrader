@@ -1,0 +1,89 @@
+$fontOne: 'Bebas Neue', cursive;
+
+.homeSection {
+    background: url(../img/intro-1.jpg);
+    background-size: cover;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    cursor: pointer;
+    margin: 40px 60px 0 40px;
+
+    img {
+        width: 220px;
+       opacity: .8;
+    }
+}
+
+.navLinks {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin-top: 40px;
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 28px;
+        opacity: .8;
+        font-family: $fontOne;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+}
+
+.headingClass {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.h1Class {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 40%;
+
+    span {
+        font-family: $fontOne;
+        opacity: .8;
+    }
+}
+
+.headingOne {
+    font-size: 130px;
+    line-height: 2.5rem;
+}
+
+.headingTwo {
+    font-size: 150px;
+}
+
+.headingThree {
+    font-size: 95px;
+    line-height: .5rem;
+}
+
+.scroll {
+    position: relative;
+}
+
+.scrollImg {
+    position: absolute;
+    left: 50%;
+    top: 30rem;
+}
