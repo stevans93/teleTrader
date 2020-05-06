@@ -14,21 +14,54 @@
     width: 220px;
     opacity: .8; }
 
+.logoNav {
+  display: none; }
+
 .navLinks {
   display: flex;
   justify-content: space-around;
   width: 70%;
   margin-top: 40px; }
   .navLinks li {
-    list-style: none; }
+    display: inline-block;
+    list-style: none;
+    margin-left: 30px; }
+  .navLinks a:hover {
+    opacity: 1; }
   .navLinks a {
     text-decoration: none;
     font-size: 28px;
     opacity: .8;
     font-family: "Bebas Neue", cursive;
-    cursor: pointer; }
-    .navLinks a:hover {
-      opacity: 1; }
+    cursor: pointer;
+    color: #fff; }
+
+.burger {
+  display: none;
+  cursor: pointer; }
+  .burger div {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease; }
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px); }
+  to {
+    opacity: 1;
+    transform: translateX(0px); } }
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-4px, 6px); }
+
+.toggle .line2 {
+  opacity: 0; }
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-4px, -6px); }
 
 .headingClass {
   display: flex;
@@ -68,6 +101,132 @@
   background: url(../img/project-stock-markets-app.jpg);
   background-size: cover; }
 
+#fp-nav {
+  position: fixed;
+  z-index: 100;
+  margin-top: -32px;
+  top: 50%;
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0); }
+
+#fp-nav.fp-right {
+  right: 17px; }
+
+.fp-slidesNav {
+  position: absolute;
+  z-index: 4;
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  left: 0 !important;
+  right: 0;
+  margin: 0 auto !important; }
+
+#fp-nav ul,
+.fp-slidesNav ul {
+  margin: 0;
+  padding: 0; }
+
+#fp-nav ul li,
+.fp-slidesNav ul li {
+  display: block;
+  width: 14px;
+  height: 13px;
+  margin: 7px;
+  position: relative; }
+
+.fp-slidesNav ul li {
+  display: inline-block; }
+
+#fp-nav ul li a,
+.fp-slidesNav ul li a {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none; }
+
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span {
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  border-radius: 100%; }
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  height: 8px;
+  width: 8px;
+  border: 1px solid #fff;
+  background: #000;
+  left: 50%;
+  top: 50%;
+  margin: -2px 0 0 -2px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out; }
+
+#fp-nav ul li:hover a span,
+.fp-slidesNav ul li:hover a span {
+  width: 8px;
+  height: 8px;
+  background: #fff; }
+
+.fp-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0; }
+
+.webStation {
+  background: url(../img/project-webstation.jpg);
+  background-size: cover; }
+
+.workStation {
+  background: url(../img/project-workstation.jpg);
+  background-size: cover; }
+
+.marketData {
+  background: url(../img/project-market-data.jpg);
+  background-size: cover; }
+
+.team {
+  background: url(../img/team.png);
+  background-size: cover; }
+
+.positions {
+  background: url(../img/bg-positions.jpg);
+  background-size: cover; }
+
+.practice {
+  background: url(../img/bg-praksa.jpg);
+  background-size: cover; }
+
+.courses {
+  background: url(../img/bg-kursevi.jpg);
+  background-size: cover; }
+
+.contact {
+  background: url(../img/bg-contact.jpg);
+  background-size: cover; }
+
+.location {
+  background: url(../img/bg-lokacija.jpg);
+  background-size: cover; }
+
 * {
   margin: 0px;
   padding: 0px;
@@ -81,3 +240,37 @@ body {
   width: 90%;
   max-width: 120rem;
   margin: 0 auto; }
+
+@media screen and (max-width: 1200px) {
+  body {
+    overflow-x: hidden; }
+  .logoNav {
+    cursor: pointer;
+    margin: 30px 0 0 20px;
+    display: block; }
+    .logoNav img {
+      width: 180px;
+      opacity: .8; }
+  .navLinks {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: #231f20;
+    display: block;
+    width: 300px;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in;
+    z-index: 2; }
+    .navLinks ul {
+      margin-top: 40px; }
+    .navLinks li {
+      opacity: 0;
+      margin-top: 20px;
+      display: block; }
+  .burger {
+    display: block; } }
+
+.navActive {
+  transform: translateX(0%); }

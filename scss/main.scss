@@ -1,5 +1,15 @@
 @import 'home';
 @import 'projects';
+@import 'navigation';
+@import 'webStation';
+@import 'workStation';
+@import 'marketData';
+@import 'team';
+@import 'positions';
+@import 'practice';
+@import 'courses';
+@import 'contact';
+@import 'location';
 
 $fontOne: 'Bebas Neue', cursive;
 
@@ -20,3 +30,5 @@ body {
     margin: 0 auto;
     
 }
+
+@import 'queries';

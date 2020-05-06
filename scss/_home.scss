@@ -17,8 +17,12 @@ $fontOne: 'Bebas Neue', cursive;
 
     img {
         width: 220px;
-       opacity: .8;
+        opacity: .8;
     }
+}
+
+.logoNav {
+    display: none;
 }
 
 .navLinks {
@@ -28,7 +32,13 @@ $fontOne: 'Bebas Neue', cursive;
     margin-top: 40px;
 
     li {
+        display: inline-block;
         list-style: none;
+        margin-left: 30px;
+    }
+
+    a:hover {
+        opacity: 1;
     }
 
     a {
@@ -37,13 +47,47 @@ $fontOne: 'Bebas Neue', cursive;
         opacity: .8;
         font-family: $fontOne;
         cursor: pointer;
+        color: #fff;
+    }
+}
 
-        &:hover {
-            opacity: 1;
-        }
+.burger {
+    display: none;
+    cursor: pointer;
+
+    div{
+        width: 25px;
+        height: 2px;
+        background-color: white;
+        margin: 5px;
+        transition: all 0.3s ease;
+    }
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle {
+    .line1 {
+        transform: rotate(-45deg) translate(-4px, 6px);
     }
 
-}
+    .line2 {
+        opacity: 0;
+    }
+
+    .line3 {
+        transform: rotate(45deg) translate(-4px, -6px);
+    }
+} 
 
 .headingClass {
     display: flex;
