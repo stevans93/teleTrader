@@ -5,7 +5,11 @@
 .nav {
   display: flex;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  z-index: 100; }
 
 .logo {
   cursor: pointer;
