@@ -12,6 +12,7 @@
 @import 'location';
 
 $fontOne: 'Bebas Neue', cursive;
+$fontTwo: 'Raleway', sans-serif;
 
 * {
     margin: 0px;
@@ -28,7 +29,25 @@ body {
     width: 90%;
     max-width: 120rem;
     margin: 0 auto;
-    
+}
+
+.headingClass {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+    h2 {
+        position: absolute;
+        font-size: 95px;
+        color: #252620;
+        margin: 8rem 25rem 0 5rem;
+        line-height: .9;
+        font-family: $fontOne;
+
+        span {
+            font-size: 130px;
+        }
+    }
 }
 
 @import 'queries';

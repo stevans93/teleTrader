@@ -1,5 +1,23 @@
+$fontTwo: 'Raleway', sans-serif;
+
 .projectsSection {
     background: url(../img/project-stock-markets-app.jpg);
     background-repeat: no-repeat;
     background-size: 110% 110%;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    opacity: 1;
+
+    h5 {
+        position: absolute;
+        font-size: 32px;
+        font-family: $fontTwo;
+        font-weight: 200;
+        color: #252620;
+        margin: 23rem 32rem 0 5rem;
+    }
 }

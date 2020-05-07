@@ -68,11 +68,6 @@
 .toggle .line3 {
   transform: rotate(45deg) translate(-4px, -6px); }
 
-.headingClass {
-  display: flex;
-  justify-content: center;
-  align-self: center; }
-
 .h1Class {
   position: absolute;
   display: flex;
@@ -114,6 +109,19 @@
   background: url(../img/project-stock-markets-app.jpg);
   background-repeat: no-repeat;
   background-size: 110% 110%; }
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  opacity: 1; }
+  .text h5 {
+    position: absolute;
+    font-size: 32px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    color: #252620;
+    margin: 23rem 32rem 0 5rem; }
 
 #fp-nav {
   position: fixed;
@@ -263,6 +271,20 @@ body {
   width: 90%;
   max-width: 120rem;
   margin: 0 auto; }
+
+.headingClass {
+  display: flex;
+  justify-content: center;
+  align-self: center; }
+  .headingClass h2 {
+    position: absolute;
+    font-size: 95px;
+    color: #252620;
+    margin: 8rem 25rem 0 5rem;
+    line-height: .9;
+    font-family: "Bebas Neue", cursive; }
+    .headingClass h2 span {
+      font-size: 130px; }
 
 @media screen and (max-width: 1200px) {
   body {
