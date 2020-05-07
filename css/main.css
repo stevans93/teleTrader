@@ -246,8 +246,7 @@
 .courses {
   background: url(../img/bg-kursevi.jpg);
   background-repeat: no-repeat;
-  height: 100%;
-  width: 100%; }
+  background-size: 110% 110%; }
 
 .contact {
   background: url(../img/bg-contact.jpg);
