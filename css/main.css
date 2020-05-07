@@ -1,6 +1,7 @@
 .homeSection {
   background: url(../img/intro-1.jpg);
-  background-size: cover; }
+  background-repeat: no-repeat;
+  background-size: 105%; }
 
 .nav {
   display: flex;
@@ -101,9 +102,18 @@
   left: 50%;
   top: 30rem; }
 
+.sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0; }
+
 .projectsSection {
   background: url(../img/project-stock-markets-app.jpg);
-  background-size: cover; }
+  background-repeat: no-repeat;
+  background-size: 105%; }
 
 #fp-nav {
   position: fixed;
@@ -197,39 +207,48 @@
 
 .webStation {
   background: url(../img/project-webstation.jpg);
-  background-size: cover; }
+  background-repeat: no-repeat;
+  background-size: 105%; }
 
 .workStation {
   background: url(../img/project-workstation.jpg);
-  background-size: cover; }
+  background-repeat: no-repeat;
+  background-size: 105%; }
 
 .marketData {
   background: url(../img/project-market-data.jpg);
-  background-size: cover; }
+  background-repeat: no-repeat;
+  background-size: 105%; }
 
 .team {
   background: url(../img/team.png);
-  background-size: cover; }
+  background-repeat: no-repeat;
+  background-size: 105%; }
 
 .positions {
   background: url(../img/bg-positions.jpg);
-  background-size: cover; }
+  background-repeat: no-repeat;
+  background-size: 105%; }
 
 .practice {
   background: url(../img/bg-praksa.jpg);
-  background-size: cover; }
+  background-repeat: no-repeat;
+  background-size: 105%; }
 
 .courses {
   background: url(../img/bg-kursevi.jpg);
-  background-size: cover; }
+  background-repeat: no-repeat;
+  background-size: 105%; }
 
 .contact {
   background: url(../img/bg-contact.jpg);
-  background-size: cover; }
+  background-repeat: no-repeat;
+  background-size: 105%; }
 
 .location {
   background: url(../img/bg-lokacija.jpg);
-  background-size: cover; }
+  background-repeat: no-repeat;
+  background-size: 105%; }
 
 * {
   margin: 0px;

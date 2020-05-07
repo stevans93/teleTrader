@@ -2,7 +2,8 @@ $fontOne: 'Bebas Neue', cursive;
 
 .homeSection {
     background: url(../img/intro-1.jpg);
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 105%;
 }
 
 .nav {
@@ -134,4 +135,13 @@ $fontOne: 'Bebas Neue', cursive;
     position: absolute;
     left: 50%;
     top: 30rem;
+}
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
 }

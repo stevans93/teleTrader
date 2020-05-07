@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
     <title>TeleTrader</title>
 </head>
 
@@ -36,8 +37,7 @@
         </div>
     </div>
     <div id="fullPage">
-        <div id="homeSection" class="section homeSection">
-
+        <div id="homeSection" class="section homeSection fullPageSection">
             <div class="container">
                 <div class="headingClass">
                     <h1 class="h1Class">
@@ -53,48 +53,54 @@
                 </div>
             </div>
         </div>
-        <div class="section projectsSection">
+        <div class="section projectsSection fullPageSection">
 
         </div>
-        <div class="section webStation">
+        <div class="section webStation fullPageSection">
 
         </div>
-        <div class="section workStation">
+        <div class="section workStation fullPageSection">
 
         </div>
-        <div class="section marketData">
+        <div class="section marketData fullPageSection">
 
         </div>
-        <div class="section team">
+        <div class="section team fullPageSection">
 
         </div>
-        <div class="section positions">
+        <div class="section positions fullPageSection">
 
         </div>
-        <div class="section practice">
+        <div class="section practice fullPageSection">
 
         </div>
-        <div class="section courses">
+        <div class="section courses fullPageSection">
 
         </div>
-        <div class="section contact">
+        <div class="section contact fullPageSection">
 
         </div>
-        <div class="section location">
+        <div class="section location fullPageSection">
 
         </div>
     </div>
 
     <script src="./js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"></script>
-    <script>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="./js/jquery.backgroundMove.js"></script>
+    <script type="text/javascript">
         new fullpage('#fullPage', {
-
             autoScrolling: true,
             navigation: true,
             anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7', 'section8', 'section9', 'section10', 'section11',]
 
         });
+
+        $('.fullPageSection').backgroundMove({
+            movementStrength: '30'
+        });
+
     </script>
 </body>
 

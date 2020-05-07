@@ -21,8 +21,5 @@
     "gulp": "^4.0.2",
     "gulp-sass": "^4.1.0"
   },
-  "dependencies": {
-    "jquery": "^3.5.1",
-    "jsdom": "^16.2.2"
-  }
+  "dependencies": {}
 }
