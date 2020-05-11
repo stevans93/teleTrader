@@ -144,7 +144,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-self: center;
-  margin: 1rem 15rem 0 0; }
+  margin: 3rem 15rem 0 0; }
   .textProject h5 {
     font-size: 32px;
     font-family: "Raleway", sans-serif;
@@ -176,7 +176,7 @@ body {
   display: flex;
   justify-content: flex-end;
   align-self: center;
-  margin: 19rem 0 0 30rem; }
+  margin: 21rem 0 0 30rem; }
   .textWeb h5 {
     font-size: 30px;
     font-family: "Raleway", sans-serif;
@@ -204,7 +204,7 @@ body {
 
 .textWork {
   float: left;
-  margin: 1rem 20rem 0 0; }
+  margin: 3rem 20rem 0 0; }
   .textWork h5 {
     font-size: 32px;
     font-family: "Raleway", sans-serif;
@@ -232,7 +232,7 @@ body {
 
 .textMarket {
   float: left;
-  margin: 1rem 15rem 0 0; }
+  margin: 3rem 15rem 0 0; }
   .textMarket h5 {
     font-size: 32px;
     font-family: "Raleway", sans-serif;

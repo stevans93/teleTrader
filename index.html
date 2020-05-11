@@ -38,7 +38,7 @@
         </div>
     </div>
     <div id="fullPage">
-        <div id="homeSection" class="section homeSection fullPageSection">
+        <section id="homeSection" class="section homeSection fullPageSection">
             <div class="container">
                 <div class="headingClass">
                     <h1 class="h1Class">
@@ -53,8 +53,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="section projectsSection fullPageSection">
+        </section>
+        <section class="section projectsSection fullPageSection">
             <div class="container">
                 <div class="projects">
                     <div class="headingClassProject">
@@ -73,7 +73,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <div class="section webStation fullPageSection">
             <div class="container">
                 <div class="webStationClass">
@@ -147,12 +147,12 @@
                 <div class="slide">
                     <div class="positionsClass">
                         <div class="headingClassPositions">
-                            <h2>
+                            <h3>
                                 <span>MATHEMATICIAN / COMPUTER SCIENTIST</span>
-                            </h2>
+                            </h3>
                         </div>
                         <div class="textPositions">
-                            <h5>Quantitative Analyst</h5>
+                            <h4>Quantitative Analyst</h4>
                         </div>
                         <a class="btnPositions" href="#">Prijavi Se</a>
                     </div>
@@ -178,17 +178,25 @@
 
     <script src="./js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="//code.jquery.com/jquery.min.js"></script>
     <script src="./js/jquery.backgroundMove.js"></script>
     <script type="text/javascript">
-
-
         new fullpage('#fullPage', {
             autoScrolling: true,
             navigation: true,
             anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7', 'section8', 'section9', 'section10', 'section11',],
             controlArrows: false,
             slidesNavigation: true,
+            onLeave: (origin, destination, direction) => {
+                const title = document.querySelectorAll('h2');
+                const text = document.querySelectorAll('h5');
+                const tl = new TimelineMax({ delay: 0.7 });
+                const tlTwo = new TimelineMax({ delay: 0.5 });
+                tl.fromTo(title, 0.5, { y: 0, opacity: 0 }, { y: '50', opacity: 1 })
+                tlTwo.fromTo(text, 0.5, { y: '100', opacity: 0 }, { y: 0, opacity: 1 })
+            }
         });
 
         $('.fullPageSection').backgroundMove({
