@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/fullpage.css">
     <title>TeleTrader</title>
 </head>
 
@@ -56,17 +57,16 @@
         <div class="section projectsSection fullPageSection">
             <div class="container">
                 <div class="projects">
-                    <div class="headingClass">
+                    <div class="headingClassProject">
                         <h2 class="heading">
                             <span>S</span>tock
-                            <span>M</span>arkets
+                            <span>M</span>arkets<br>
                             <span>A</span>plikacije
                         </h2>
                     </div>
 
-                    <div class="text">
-                        <h5>TeleTrader
-                            besplatne mobilne aplikacije za Android, iPhone i iPad uređaje
+                    <div class="textProject">
+                        <h5>TeleTrader besplatne mobilne aplikacije za Android, iPhone i iPad uređaje
                             omogućavaju pristup podacima sa svih svetskih finansijskih tržišta.
                             Otvorite jedan nalog i dobićete mogućnost pristupa svim ostalim
                             TeleTrader aplikacijama.</h5>
@@ -75,19 +75,92 @@
             </div>
         </div>
         <div class="section webStation fullPageSection">
-
+            <div class="container">
+                <div class="webStationClass">
+                    <div class="headingClassWeb">
+                        <h2 class="heading">
+                            <span>T</span>ele<span>T</span>rader<br>
+                            <span>W</span>eb<span>S</span>tation
+                        </h2>
+                    </div>
+                    <div class="textWeb">
+                        <h5>Web terminal za prikaz i analizu berzanskih podataka namenjen privatnim i
+                            profesionalnim korisnicima. Podržava sve poznate web pretraživače i
+                            funkcionalan je na mobilnim uređajima.
+                            Pruža napredne mogućnosti za pretragu berzanskih podataka i vesti, kao i
+                            obilje opcija za prikaz i sistematizaciju – grafikone, watch liste,
+                            portfolio prikaze, alarme... Profesionalni alat dostupan svima.</h5>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="section workStation fullPageSection">
+            <div class="container">
+                <div class="workStationClass">
+                    <div class="headingClassWork">
+                        <h2 class="heading">
+                            <span>T</span>ele<span>T</span>rader<br>
+                            <span>W</span>ork<span>S</span>tation
 
+                        </h2>
+                    </div>
+
+                    <div class="textWork">
+                        <h5>TeleTrader WorkStation, platforma za vizuelizaciju i analizu berzanskih podataka u
+                            realnom vremenu. Grafikoni, tehnička analiza, dubina tržišta, prikaz
+                            podataka u različitim vremenskim kompresijama kao i integracije sa
+                            online brokerskim kućama - sve na jednom mestu.</h5>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="section marketData fullPageSection">
+            <div class="container">
+                <div class="marketStationClass">
+                    <div class="headingClassMarket">
+                        <h2 class="heading">
+                            <span>M</span>arket
+                            <span>D</span>ata
 
+                        </h2>
+                    </div>
+
+                    <div class="textMarket">
+                        <h5>Prikupljanje, čuvanje i distribucija berzanskih podataka zahtevaju
+                            dizajn i izradu komponenti izuzetne robusnosti i visokih performansi.
+
+                            Obrađujemo podatke od preko 10 miliona finansijskih instrumenata sa
+                            svih velikih svetskih berzi, uključujući kretanje vrednosti: akcija,
+                            valutnih parova, finansijskih derivata, plemenitih metala, berzanskih
+                            roba i ostalih finansijskih instrumenata. Naš posao je da obezbedimo
+                            da svaka tržišna informacija pravovremeno stigne do krajnjeg korisnika
+                            u najboljem mogućem kvalitetu.</h5>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="section team fullPageSection">
 
         </div>
         <div class="section positions fullPageSection">
-
+            <div class="container">
+                <div class="slide">
+                    <div class="positionsClass">
+                        <div class="headingClassPositions">
+                            <h2>
+                                <span>MATHEMATICIAN / COMPUTER SCIENTIST</span>
+                            </h2>
+                        </div>
+                        <div class="textPositions">
+                            <h5>Quantitative Analyst</h5>
+                        </div>
+                        <a class="btnPositions" href="#">Prijavi Se</a>
+                    </div>
+                </div>
+                <div class="slide"> Slide 2 </div>
+                <div class="slide"> Slide 3 </div>
+                <div class="slide"> Slide 4 </div>
+            </div>
         </div>
         <div class="section practice fullPageSection">
 
@@ -113,8 +186,9 @@
         new fullpage('#fullPage', {
             autoScrolling: true,
             navigation: true,
-            anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7', 'section8', 'section9', 'section10', 'section11',]
-
+            anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7', 'section8', 'section9', 'section10', 'section11',],
+            controlArrows: false,
+            slidesNavigation: true,
         });
 
         $('.fullPageSection').backgroundMove({

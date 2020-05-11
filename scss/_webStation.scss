@@ -3,3 +3,39 @@
     background-repeat: no-repeat;
     background-size: 110% 110%;
 }
+
+.headingClassWeb {
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    
+
+    h2 {
+        position: absolute;
+        font-size: 90px;
+        color: #252620;
+        line-height: .9;
+        font-family: $fontOne;
+        text-align: right;
+        margin: 5rem 0 0 0;
+
+        span {
+            font-size: 120px;
+        }
+    }
+}
+
+.textWeb {
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    margin: 19rem 0 0 30rem;
+
+    h5 {
+        font-size: 30px;
+        font-family: $fontTwo;
+        font-weight: 200;
+        color: #252620;
+        text-align: right;
+    }
+}

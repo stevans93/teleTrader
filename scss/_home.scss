@@ -101,7 +101,9 @@ $fontOne: 'Bebas Neue', cursive;
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 40%;
+    top: 60%;
+    left: 50%;
+    transform: translate( -50%, -60%);
 
     span {
         font-family: $fontOne;
@@ -130,7 +132,8 @@ $fontOne: 'Bebas Neue', cursive;
 .scrollImg {
     position: absolute;
     left: 50%;
-    top: 30rem;
+    top: 15rem;
+    transform: translate( -50%);
 }
 
 .sticky {

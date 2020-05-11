@@ -3,3 +3,33 @@
     background-repeat: no-repeat;
     background-size: 110% 110%;
 }
+
+.headingClassWork {
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+
+    h2 {
+        font-size: 95px;
+        color: #fff;
+        line-height: .9;
+        font-family: $fontOne;
+        margin-top: 4rem;
+
+        span {
+            font-size: 130px;
+        }
+    }
+}
+
+.textWork {
+    float: left;
+    margin: 1rem 20rem 0 0;
+    h5 {
+        font-size: 32px;
+        font-family: $fontTwo;
+        font-weight: 200;
+        color: #fff;
+        margin-right: 10rem;
+    }
+}

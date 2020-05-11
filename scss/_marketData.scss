@@ -3,3 +3,33 @@
     background-repeat: no-repeat;
     background-size: 110% 110%;
 }
+
+.headingClassMarket {
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+
+    h2 {
+        font-size: 95px;
+        color: #fff;
+        line-height: .9;
+        font-family: $fontOne;
+        margin-top: 5rem;
+
+        span {
+            font-size: 130px;
+        }
+    }
+}
+
+.textMarket {
+    float: left;
+    margin: 1rem 15rem 0 0;
+    
+    h5 {
+        font-size: 32px;
+        font-family: $fontTwo;
+        font-weight: 200;
+        color: #fff;
+    }
+}

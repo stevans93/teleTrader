@@ -1,16 +1,3 @@
-@import 'home';
-@import 'projects';
-@import 'navigation';
-@import 'webStation';
-@import 'workStation';
-@import 'marketData';
-@import 'team';
-@import 'positions';
-@import 'practice';
-@import 'courses';
-@import 'contact';
-@import 'location';
-
 $fontOne: 'Bebas Neue', cursive;
 $fontTwo: 'Raleway', sans-serif;
 
@@ -31,23 +18,15 @@ body {
     margin: 0 auto;
 }
 
-.headingClass {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-
-    h2 {
-        position: absolute;
-        font-size: 95px;
-        color: #252620;
-        margin: 8rem 25rem 0 5rem;
-        line-height: .9;
-        font-family: $fontOne;
-
-        span {
-            font-size: 130px;
-        }
-    }
-}
-
+@import 'home';
+@import 'projects';
+@import 'webStation';
+@import 'workStation';
+@import 'marketData';
+@import 'team';
+@import 'positions';
+@import 'practice';
+@import 'courses';
+@import 'contact';
+@import 'location';
 @import 'queries';

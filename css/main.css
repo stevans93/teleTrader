@@ -1,3 +1,17 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+body {
+  color: #fff;
+  overflow: hidden; }
+
+.container {
+  width: 90%;
+  max-width: 120rem;
+  margin: 0 auto; }
+
 .homeSection {
   background: url(../img/intro-1.jpg);
   background-repeat: no-repeat;
@@ -73,7 +87,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  top: 40%; }
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -60%); }
   .h1Class span {
     font-family: "Bebas Neue", cursive;
     opacity: .8; }
@@ -95,7 +111,8 @@
 .scrollImg {
   position: absolute;
   left: 50%;
-  top: 30rem; }
+  top: 15rem;
+  transform: translate(-50%); }
 
 .sticky {
   position: fixed;
@@ -110,123 +127,117 @@
   background-repeat: no-repeat;
   background-size: 110% 110%; }
 
-.text {
+.headingClassProject {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-self: center; }
+  .headingClassProject h2 {
+    font-size: 95px;
+    color: #252620;
+    line-height: .9;
+    font-family: "Bebas Neue", cursive;
+    margin-top: 3rem; }
+    .headingClassProject h2 span {
+      font-size: 130px; }
+
+.textProject {
+  display: flex;
+  justify-content: flex-start;
   align-self: center;
-  opacity: 1; }
-  .text h5 {
-    position: absolute;
+  margin: 1rem 15rem 0 0; }
+  .textProject h5 {
     font-size: 32px;
     font-family: "Raleway", sans-serif;
     font-weight: 200;
     color: #252620;
-    margin: 23rem 32rem 0 5rem; }
-
-#fp-nav {
-  position: fixed;
-  z-index: 100;
-  margin-top: -32px;
-  top: 50%;
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0); }
-
-#fp-nav.fp-right {
-  right: 17px; }
-
-.fp-slidesNav {
-  position: absolute;
-  z-index: 4;
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  left: 0 !important;
-  right: 0;
-  margin: 0 auto !important; }
-
-#fp-nav ul,
-.fp-slidesNav ul {
-  margin: 0;
-  padding: 0; }
-
-#fp-nav ul li,
-.fp-slidesNav ul li {
-  display: block;
-  width: 14px;
-  height: 13px;
-  margin: 7px;
-  position: relative; }
-
-.fp-slidesNav ul li {
-  display: inline-block; }
-
-#fp-nav ul li a,
-.fp-slidesNav ul li a {
-  display: block;
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  text-decoration: none; }
-
-#fp-nav ul li a.active span,
-.fp-slidesNav ul li a.active span,
-#fp-nav ul li:hover a.active span,
-.fp-slidesNav ul li:hover a.active span {
-  height: 8px;
-  width: 8px;
-  background: #fff;
-  border-radius: 100%; }
-
-#fp-nav ul li a span,
-.fp-slidesNav ul li a span {
-  border-radius: 50%;
-  position: absolute;
-  z-index: 1;
-  height: 8px;
-  width: 8px;
-  border: 1px solid #fff;
-  background: #000;
-  left: 50%;
-  top: 50%;
-  margin: -2px 0 0 -2px;
-  -webkit-transition: all 0.1s ease-in-out;
-  -moz-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out; }
-
-#fp-nav ul li:hover a span,
-.fp-slidesNav ul li:hover a span {
-  width: 8px;
-  height: 8px;
-  background: #fff; }
-
-.fp-sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0; }
+    margin: 0 20rem 0 0; }
 
 .webStation {
   background: url(../img/project-webstation.jpg);
   background-repeat: no-repeat;
   background-size: 110% 110%; }
 
+.headingClassWeb {
+  display: flex;
+  justify-content: flex-end;
+  align-self: center; }
+  .headingClassWeb h2 {
+    position: absolute;
+    font-size: 90px;
+    color: #252620;
+    line-height: .9;
+    font-family: "Bebas Neue", cursive;
+    text-align: right;
+    margin: 5rem 0 0 0; }
+    .headingClassWeb h2 span {
+      font-size: 120px; }
+
+.textWeb {
+  display: flex;
+  justify-content: flex-end;
+  align-self: center;
+  margin: 19rem 0 0 30rem; }
+  .textWeb h5 {
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    color: #252620;
+    text-align: right; }
+
 .workStation {
   background: url(../img/project-workstation.jpg);
   background-repeat: no-repeat;
   background-size: 110% 110%; }
 
+.headingClassWork {
+  display: flex;
+  justify-content: flex-start;
+  align-self: center; }
+  .headingClassWork h2 {
+    font-size: 95px;
+    color: #fff;
+    line-height: .9;
+    font-family: "Bebas Neue", cursive;
+    margin-top: 4rem; }
+    .headingClassWork h2 span {
+      font-size: 130px; }
+
+.textWork {
+  float: left;
+  margin: 1rem 20rem 0 0; }
+  .textWork h5 {
+    font-size: 32px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    color: #fff;
+    margin-right: 10rem; }
+
 .marketData {
   background: url(../img/project-market-data.jpg);
   background-repeat: no-repeat;
   background-size: 110% 110%; }
+
+.headingClassMarket {
+  display: flex;
+  justify-content: flex-start;
+  align-self: center; }
+  .headingClassMarket h2 {
+    font-size: 95px;
+    color: #fff;
+    line-height: .9;
+    font-family: "Bebas Neue", cursive;
+    margin-top: 5rem; }
+    .headingClassMarket h2 span {
+      font-size: 130px; }
+
+.textMarket {
+  float: left;
+  margin: 1rem 15rem 0 0; }
+  .textMarket h5 {
+    font-size: 32px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    color: #fff; }
 
 .team {
   background: url(../img/team.png);
@@ -258,35 +269,7 @@
   background-repeat: no-repeat;
   background-size: 110% 110%; }
 
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box; }
-
-body {
-  color: #fff;
-  overflow: hidden; }
-
-.container {
-  width: 90%;
-  max-width: 120rem;
-  margin: 0 auto; }
-
-.headingClass {
-  display: flex;
-  justify-content: center;
-  align-self: center; }
-  .headingClass h2 {
-    position: absolute;
-    font-size: 95px;
-    color: #252620;
-    margin: 8rem 25rem 0 5rem;
-    line-height: .9;
-    font-family: "Bebas Neue", cursive; }
-    .headingClass h2 span {
-      font-size: 130px; }
-
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
   body {
     overflow-x: hidden; }
   .logoNav {

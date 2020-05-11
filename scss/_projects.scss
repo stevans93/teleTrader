@@ -6,18 +6,35 @@ $fontTwo: 'Raleway', sans-serif;
     background-size: 110% 110%;
 }
 
-.text {
+.headingClassProject {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-self: center;
-    opacity: 1;
+
+    h2 {
+        font-size: 95px;
+        color: #252620;
+        line-height: .9;
+        font-family: $fontOne;
+        margin-top: 3rem;
+
+        span {
+            font-size: 130px;
+        }
+    }
+}
+
+.textProject {
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    margin: 1rem 15rem 0 0;
 
     h5 {
-        position: absolute;
         font-size: 32px;
         font-family: $fontTwo;
         font-weight: 200;
         color: #252620;
-        margin: 23rem 32rem 0 5rem;
+        margin: 0 20rem 0 0;
     }
 }
