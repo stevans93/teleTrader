@@ -249,10 +249,98 @@ body {
   background-repeat: no-repeat;
   background-size: 110% 110%; }
 
+.positionsClass {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }
+
+.headingClassPositions h3 {
+  font-size: 112px;
+  font-family: "Bebas Neue", cursive;
+  margin: 0 10rem;
+  line-height: 0.9; }
+
+.textPositions h4 {
+  font-size: 48px;
+  font-family: "Raleway", sans-serif; }
+
+.btnPositions {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border: 1px solid #4c4c4c;
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+  border-radius: 4px;
+  padding: 5px 20px;
+  width: 190px;
+  margin-top: 40px;
+  text-decoration: none;
+  text-transform: uppercase; }
+  .btnPositions:hover {
+    background-color: rgba(255, 255, 255, 0.25); }
+
 .practice {
   background: url(../img/bg-praksa.jpg);
   background-repeat: no-repeat;
   background-size: 110% 110%; }
+
+.headingClassPractice h3 {
+  position: absolute;
+  font-size: 80px;
+  font-family: "Bebas Neue", cursive;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, -15%); }
+
+.practiceClass {
+  float: left; }
+
+.practiceCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: space-between;
+  width: 100%;
+  margin: 100px auto 0 auto; }
+
+.card {
+  display: block;
+  text-align: center;
+  margin: 40px 10px 0 10px; }
+
+.cardImg img {
+  width: 38%; }
+
+.cardInfo {
+  margin: 10px 0; }
+  .cardInfo h4 {
+    margin: 10px 0;
+    font-size: 23px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300; }
+  .cardInfo span {
+    font-size: 14px;
+    font-family: "Raleway", sans-serif; }
+
+.btn {
+  display: flex !important;
+  justify-content: center;
+  align-items: center; }
+
+.btnPractice {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border: 1px solid #4c4c4c;
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+  border-radius: 4px;
+  padding: 5px 20px;
+  width: 340px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center; }
+  .btnPractice:hover {
+    background-color: rgba(255, 255, 255, 0.25); }
 
 .courses {
   background: url(../img/bg-kursevi.jpg);

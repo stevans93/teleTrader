@@ -3,3 +3,76 @@
     background-repeat: no-repeat;
     background-size: 110% 110%;
 }
+
+.headingClassPractice {
+    h3 {
+        position: absolute;
+        font-size: 80px;
+        font-family: $fontOne;
+        left: 50%;
+        top: 15%;
+        transform: translate(-50%, -15%);
+    }
+}
+
+.practiceClass {
+    float: left;
+}
+
+.practiceCards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-content: space-between;
+    width: 100%;
+    margin: 100px auto 0 auto;
+}
+
+.card {
+    display: block;
+    text-align: center;
+    margin: 40px 10px 0 10px;
+}
+
+.cardImg {
+    img {
+        width: 38%;
+    }
+}
+
+.cardInfo {
+    margin: 10px 0;
+
+    h4 {
+        margin: 10px 0;
+        font-size: 23px;
+        font-family: $fontTwo;
+        font-weight: 300;
+    }
+
+    span {
+        font-size: 14px;
+        font-family: $fontTwo;
+    }
+}
+.btn {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+.btnPractice {
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #fff;
+    border: 1px solid #4c4c4c;
+    font-size: 24px;
+    font-family: $fontTwo;
+    border-radius: 4px;
+    padding: 5px 20px;
+    width: 340px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.25);
+    }
+}

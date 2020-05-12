@@ -3,3 +3,44 @@
     background-repeat: no-repeat;
     background-size: 110% 110%;
 }
+
+.positionsClass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.headingClassPositions {
+    h3 {
+        font-size: 112px;
+        font-family: $fontOne;
+        margin: 0 10rem;
+        line-height: 0.9;
+    }
+}
+
+.textPositions {
+    h4 {
+        font-size: 48px;
+        font-family: $fontTwo;
+    }
+}
+
+.btnPositions {
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #fff;
+    border: 1px solid #4c4c4c;
+    font-size: 24px;
+    font-family: $fontTwo;
+    border-radius: 4px;
+    padding: 5px 20px;
+    width: 190px;
+    margin-top: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.25);
+    }
+}
