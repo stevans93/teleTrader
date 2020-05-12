@@ -23,8 +23,8 @@
             <ul>
                 <li><a href="#section1">Pocetna</a></li>
                 <li><a href="#section2">Projekti</a></li>
-                <li><a href="#section5">Tim</a></li>
-                <li><a href="#section6">Pozicije</a></li>
+                <li><a href="#section6">Tim</a></li>
+                <li><a href="#section7">Pozicije</a></li>
                 <li><a href="#section8">Praksa</a></li>
                 <li><a href="#section9">Kursevi</a></li>
                 <li><a href="#section10">Kontakt</a></li>
@@ -257,7 +257,7 @@
 
 
                         </div>
-                        <div class="btn">
+                        <div class="btn cardFour">
                             <a class="btnPractice" href="#">Prijavite se</a>
                         </div>
                     </div>
@@ -265,7 +265,7 @@
                 <div class="slide">
                     <div class="practiceClass">
                         <div class="practiceCards">
-                            <div class="card">
+                            <div class="card cardOne">
                                 <div class="cardImg">
                                     <img src="./img/praktikant-ivan-vujosevic.png">
                                 </div>
@@ -284,7 +284,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card cardTwo">
                                 <div class="cardImg">
                                     <img src="./img/praktikant-1.png">
                                 </div>
@@ -301,7 +301,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card cardThree">
                                 <div class="cardImg">
                                     <img src="./img/praktikant-2.png">
                                 </div>
@@ -322,7 +322,7 @@
 
 
                         </div>
-                        <div class="btn">
+                        <div class="btn cardFour">
                             <a class="btnPractice" href="#">Prijavite se</a>
                         </div>
                     </div>
@@ -352,15 +352,23 @@
             navigation: true,
             anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7', 'section8', 'section9', 'section10', 'section11',],
             controlArrows: false,
+            scrollingSpeed: 700,
             slidesNavigation: true,
             onLeave: (origin, destination, direction) => {
                 const title = document.querySelectorAll('h2');
                 const text = document.querySelectorAll('h5');
                 const cardOne = document.getElementsByClassName('cardOne');
+                const cardTwo = document.getElementsByClassName('cardTwo');
+                const cardThree = document.getElementsByClassName('cardThree');
+                const cardFour = document.getElementsByClassName('cardFour');
                 const tl = new TimelineMax({ delay: 0.7 });
-                const tlTwo = new TimelineMax({ delay: 0.5 });
-                tl.fromTo(title, 0.5, { y: 0, opacity: 0 }, { y: '50', opacity: 1 })
-                tlTwo.fromTo(text, 0.5, { y: '100', opacity: 0 }, { y: 0, opacity: 1 })
+                const tlOne = new TimelineMax({ delay: 0.5 });
+                tl.fromTo(title, 0.5, { y: 0, opacity: 0 }, { y: '50', opacity: 1 });
+                tlOne.fromTo(text, 0.5, { y: '100', opacity: 0 }, { y: 0, opacity: 1 });
+                tl.fromTo(cardOne, 0.5, { y: '100', opacity: 0 }, { y: 0, opacity: 1 });
+                tl.fromTo(cardTwo, 0.5, { y: '100', opacity: 0 }, { y: 0, opacity: 1 });
+                tl.fromTo(cardThree, 0.5, { y: '100', opacity: 0 }, { y: 0, opacity: 1 });
+                tl.fromTo(cardFour, 0.5, { y: '100', opacity: 0 }, { y: 0, opacity: 1 });
             }
         });
 
