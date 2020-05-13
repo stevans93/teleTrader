@@ -40,9 +40,47 @@
 
     .burger {
         display: block;
+        margin-top: 40px;
     }
 }
 
 .navActive {
     transform: translateX(0%);
+}
+
+@media screen and (max-width: 1024px) {
+    .headingOne {
+        font-size: 90px;
+    }
+
+    .headingTwo {
+        font-size: 110px;
+    }
+    
+    .headingThree {
+        font-size: 70px;
+    }
+    
+    .scrollImg {
+        top: 35rem;
+    }
+
+    .headingClassPractice {
+        h3 {
+            font-size: 60px;
+        }
+    }
+    
+    .contactHeading {
+        font-size: 60px;
+    }
+
+    .formContact {
+        form {
+            .fullName {
+                margin-right: 1.2%;
+            } 
+        }
+    }
+    
 }
