@@ -3,3 +3,57 @@
     background-repeat: no-repeat;
     background-size: 110% 110%;
 }
+
+.coursesClass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.courseText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.courseHeading {
+    h3 {
+        font-size: 80px;
+        font-family: $fontOne;
+    }
+}
+
+.courseText {
+    font-family: $fontTwo;
+
+    span {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    a {
+        font-size: 20px;
+        text-decoration: none;
+        color: #fff;
+        margin-bottom: 10px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.btnCourse {
+    border: 1px solid #4c4c4c;
+    width: 340px;
+    border-radius: 4px;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.12);
+    text-decoration: none !important;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.25);
+    }
+}
