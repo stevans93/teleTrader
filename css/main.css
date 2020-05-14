@@ -512,3 +512,29 @@ body {
     font-size: 60px; }
   .formContact form .fullName {
     margin-right: 1.2%; } }
+
+@media screen and (max-width: 834px) {
+  .headingOne {
+    font-size: 80px; }
+  .headingTwo {
+    font-size: 90px; }
+  .headingThree {
+    font-size: 60px; }
+  .scrollImg {
+    top: 28rem; }
+  .textProject {
+    margin: 50px auto; }
+  .textWeb {
+    margin: 22rem 0 0 20rem; }
+  .textWork {
+    margin: 3rem 10rem 0 0; }
+  .headingClassPractice h3 {
+    font-size: 50px; }
+  .contactHeading {
+    font-size: 48px; }
+  .formContact form .fullName {
+    margin-right: 1%; }
+  .locationHeading h3 {
+    font-size: 44px; }
+  .map iframe {
+    width: 800px; } }
