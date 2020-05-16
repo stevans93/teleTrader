@@ -145,6 +145,276 @@
     }
 }
 
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 768px) {
+    .headingOne {
+        font-size: 70px;
+    }
+
+    .headingTwo {
+        font-size: 80px;
+    }
     
+    .headingThree {
+        font-size: 50px;
+    }
+
+    .scrollImg {
+        top: 25rem;
+    }
+
+    .headingClassProject {
+        h2 {
+            font-size: 70px;
+        }
+
+        span {
+            font-size: 100px;
+        }
+    }
+
+    .headingClassWeb {
+        h2 {
+            font-size: 70px;
+        }
+
+        span {
+            font-size: 100px;
+        }
+    }
+
+    .headingClassWork {
+        h2 {
+            font-size: 70px;
+        }
+
+        span {
+            font-size: 100px;
+        }
+    }
+
+    .headingClassMarket {
+        h2 {
+            font-size: 70px;
+        }
+
+        span {
+            font-size: 100px;
+        }
+    }
+
+    .headingClassPractice {
+        h3 {
+            font-size: 45px;
+        }
+    }
+    
+    .courseText {
+        span {
+            font-size: 30px;
+        }
+    }
+
+    .formContact {
+        form {
+            .fullName {
+                margin-right: 0.9%;
+             }
+        }
+    }
+
+    .locationHeading {
+        text-align: center;
+    }
+
+    .map {
+        iframe {
+            width: 650px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .headingOne {
+        font-size: 40px;
+    }
+
+    .headingTwo {
+        font-size: 60px;
+    }
+    
+    .headingThree {
+        font-size: 35px;
+        line-height: 1;
+    }
+
+    .scrollImg {
+        top: 18rem;
+    }
+
+    .projectsSection {
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/project-stock-markets-app.jpg);
+        background-size: 110% 110%;
+    }
+
+    .headingClassProject {
+        h2 {
+            font-size: 50px;
+            color: #fff;
+        }
+        
+        span {
+            font-size: 50px !important;
+            color: #fff;
+        }
+    }
+
+    .textProject {
+        h5 {
+            font-size: 20px;
+            margin: 2rem 1rem 0 0;
+            color: #fff;
+        }
+    }
+
+    .webStation {
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/project-webstation.jpg);
+        background-size: 110% 110%;
+    }
+
+    .headingClassWeb {
+        margin: 0 2rem 0 0;
+        justify-content: flex-start;
+
+        h2 {
+            font-size: 50px;
+            color: #fff;
+        }
+
+        span {
+            font-size: 50px !important;
+            color: #fff;
+        }
+    }
+
+    .textWeb {
+        margin: 15rem 2rem 0 0;
+
+        h5 {
+            font-size: 20px;
+            color: #fff;
+            text-align: left;
+        }
+    }
+
+    .headingClassWork {
+        h2 {
+            font-size: 50px;
+        }
+
+        span {
+            font-size: 50px !important;
+        }
+    }
+
+    .textWork {
+        margin: 4rem 2rem 0 0;
+
+        h5 {
+            font-size: 20px;
+            margin: 0;
+        }
+    }
+
+    .headingClassMarket {
+        h2 {
+            font-size: 50px;
+        }
+
+        span {
+            font-size: 50px !important;
+        }
+    }
+
+    .textMarket {
+        margin: 4rem 2rem 0 0;
+
+        h5 {
+            font-size: 20px;
+        }
+    }
+
+    .headingClassPositions {
+        h3 {
+            font-size: 50px;
+        }
+    }
+
+    .textPositions {
+        h4 {
+            font-size: 22px;
+        }
+    }
+    .headingClassPractice {
+        h3 {
+            font-size: 40px;
+            text-align: center;
+        }
+    }
+
+    .cardInfo {
+        margin: 10px;
+    }
+
+    .cardDisplay {
+        display: none;
+    }
+
+    .practiceCards {
+        grid-template-columns: none;
+    }
+
+    .btnPractice {
+        width: 300px;
+    }
+
+    .courseHeading {
+        h3 {
+            font-size: 50px;
+        }
+    }
+
+    .courseText {
+        text-align: center;
+    }
+
+    .btnCourse {
+        width: 50%;
+    }
+
+    .courseVideo {
+        iframe {
+            width: 300px;
+            height: 400px;
+        }
+    }
+
+    .contactClass {
+        width: 100%;
+    }
+
+    .formContact {
+        input {
+            width: 100% !important;
+        }
+
+        .fullName {
+            margin-right: 0 !important;
+         }
+    }
+
+    .map {
+        iframe {
+            width: 300px;
+        }
+    }
 }
